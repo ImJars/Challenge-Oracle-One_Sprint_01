@@ -11,26 +11,30 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#609ED4",
+              background: "#F3F5FC",
+              "primary-blue": "#0A3871",
             },
           },
         },
       };
     </script>
   </head>
-  <body>
-    <div class="container">
+  <body class="bg-background w-full h-screen flex justify-center">
+    <div class="container flex justify-between items-center">
       <div class="encriptar">
+        <h1 class="text-primary-blue font-semibold text-2xl">
+          Ingresa el texto aqui:
+        </h1>
         <textarea
-          name="texto"
-          class="texto"
+          class="mt-4 mb-2 py-5 block w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
           id="texto"
-          cols="30"
-          rows="10"
+          cols="60"
+          rows="20"
           placeholder="Ingresa el texto aqui"
         >
         </textarea>
-        <div class="terminos">
+        <div class="terminos flex items-center space-x-1 text-sm">
+          <img src="./images/vector.svg" class="" alt="" />
           <p>Solo letras minusculas y sin acentos</p>
         </div>
         <div class="botones">
@@ -42,7 +46,7 @@
           </button>
         </div>
       </div>
-      <div class="Encriptado">
+      <div class="encriptado">
         <img src="" alt="" id="imagen-alura" />
         <div class="mensaje-encriptado" id="mensaje-encriptado">
           <h2>Ningun mensaje encriptado</h2>
