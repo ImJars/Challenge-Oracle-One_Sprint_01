@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#609ED4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aqui"
+        >
+        </textarea>
+        <div class="terminos">
+          <p>Solo letras minusculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button class="boton" id="btn-encriptar" type="button">
+            Encriptar
+          </button>
+          <button class="boton" id="btn-desencriptar" type="button">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="Encriptado">
+        <img src="" alt="" id="imagen-alura" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2>Ningun mensaje encriptado</h2>
+          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" />
+</html>
