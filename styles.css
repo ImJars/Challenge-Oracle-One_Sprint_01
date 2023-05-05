@@ -8,7 +8,7 @@
   height: 100vh;
   background: #f3f5fc;
 }
-.text {
+.texto {
   position: absolute;
   width: 42%;
   height: 60%;
@@ -179,7 +179,7 @@
   .encriptar {
     width: 100%;
   }
-  .text {
+  .texto {
     width: 80%;
     height: 60%;
     left: 10%;
